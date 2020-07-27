@@ -1,7 +1,8 @@
+/* -*- mode: css; -*- */
 /************************************************
  * ROFI Color theme
- * User: leofa
- * Copyright: 2017 leofa
+ * User: Jewel James
+ * Copyright: 2020
  ***********************************************/
 
 * {
@@ -22,7 +23,7 @@
     alternate-normal-foreground: @foreground;
     normal-background:           @background;
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-    selected-normal-background:  rgba ( 0, 134, 179, 100 % );
+    selected-normal-background:  rgba ( 77, 77, 77, 100 % );
     border-color:                rgba ( 100, 100, 100, 100 % );
     spacing:                     2;
     separatorcolor:              rgba ( 29, 31, 33, 100 % );
@@ -36,8 +37,8 @@
 }
 #window {
     background-color: @background;
-    border:           0px 1px 1px 1px;
-    padding:          2px 7px 7px 7px;
+    border:           1px 1px 1px 1px;
+    padding:          3;
 }
 #mainbox {
     border:  0;
@@ -50,18 +51,21 @@
 }
 #textbox {
     text-color: @foreground;
+    highlight: bold;
 }
 #listview {
     fixed-height: 0;
     border:       2px 0px 0px ;
     border-color: @separatorcolor;
-    spacing:      2px ;
+    spacing:      1px;
     scrollbar:    true;
     padding:      2px 0px 0px ;
 }
 #element {
     border:  0;
-    padding: 2px ;
+    padding: 3px;
+}
+#element.seleted {
 }
 #element.normal.normal {
     background-color: @normal-background;
@@ -103,7 +107,7 @@
     width:        4px ;
     border:       0;
     handle-color: @normal-foreground;
-    handle-width: 8px ;
+    handle-width: 3px ;
     padding:      0;
 }
 #mode-switcher {
